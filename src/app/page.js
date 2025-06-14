@@ -8,6 +8,7 @@ import HeroSection from './components/sections/Hero';
 import ProjectsSection from './components/sections/Projects';
 import SkillsSection from './components/sections/Skills';
 import AboutSection from './components/sections/About';
+import FadeInSection from './components/FadeInSection';
 
 
 const Portfolio = () => {
@@ -61,10 +62,21 @@ const Portfolio = () => {
     <div className="bg-slate-900 text-white font-sans">
       <Navigation />
       <HeroSection />
-      <AboutSection />
-      <SkillsSection />
-      <ProjectsSection />
-      <Contract />
+      <FadeInSection>
+        <AboutSection />
+      </FadeInSection>
+      
+      <FadeInSection>
+        <SkillsSection />
+      </FadeInSection>
+      
+      <FadeInSection>
+        <ProjectsSection />
+      </FadeInSection>
+      
+      <FadeInSection>
+        <Contract />
+      </FadeInSection>
       <Footer />
 
     </div>

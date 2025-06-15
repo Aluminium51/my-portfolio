@@ -37,7 +37,7 @@ const HeroSection = () => {
     return (
         <section
             id="home"
-            className="min-h-screen flex items-center justify-center relative overflow-hidden transition-all duration-300"
+            className="min-h-screen flex items-center justify-center relative overflow-hidden transition-all duration-300 pt-20"
             style={backgroundStyle}
         >
             {/* Animated background particles */}
@@ -80,10 +80,9 @@ const HeroSection = () => {
                             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
                                 Hi, I'm{' '}
                                 <span className="relative inline-block">
-                                    <span className="bg-gradient-to-r from-indigo-400 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-gradient-x">
+                                    <span className="bg-gradient-to-r from-indigo-400 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-gradient-x drop-shadow-[0_0_15px_rgba(139,92,246,0.5)] filter">
                                         Noptanadon
                                     </span>
-                                    <span className="absolute -inset-1 bg-gradient-to-r from-indigo-400 via-purple-500 to-pink-500 rounded-lg blur opacity-30 animate-pulse"></span>
                                 </span>
                                 <br />
                                 <span className="bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent">

@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Github, Mail, Instagram, Facebook, ExternalLink, Code, Shield, CheckCircle, Zap } from 'lucide-react';
 import Footer from './components/Footer';
-import Contract from './components/sections/Contract';
+import Contact from './components/sections/Contact';
 import Navigation from './components/Navbar';
 import HeroSection from './components/sections/Hero';
 import ProjectsSection from './components/sections/Projects';
@@ -19,21 +19,12 @@ const Portfolio = () => {
       <StarryBackground />
       <Navigation />
       <HeroSection />
-      <FadeInSection>
-        <AboutSection />
-      </FadeInSection>
-      
-      <FadeInSection>
-        <SkillsSection />
-      </FadeInSection>
-      
-      <FadeInSection>
-        <ProjectsSection />
-      </FadeInSection>
-      
-      <FadeInSection>
-        <Contract />
-      </FadeInSection>
+
+      <AboutSection />
+      <SkillsSection />
+      <ProjectsSection />
+      <Contact />
+
       <Footer />
 
     </div>

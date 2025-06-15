@@ -34,8 +34,8 @@ const Navigation = () => {
             <div className="container mx-auto px-6 py-4">
                 <div className="flex justify-between items-center">
                     <div className="text-2xl font-bold">
-                        <span className="text-white">Noptanadon  </span>
-                        <span className="text-indigo-400">Pongpila</span>
+                        <span className="text-white">Aluminium</span>
+                        <span className="text-indigo-400">51</span>
                     </div>
 
                     {/* Desktop Navigation */}

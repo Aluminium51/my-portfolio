@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectCard from '../ui/projectCard';
+import FadeInSection from '../FadeInSection';
 
 const projects = [
   {
@@ -31,16 +32,18 @@ const projects = [
 const ProjectsSection = () => {
   return (
     <section id="projects" className="py-20 bg-slate-800">
-      <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">Featured Projects</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <ProjectCard key={index} project={project} />
-            ))}
+      <FadeInSection>
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl font-bold mb-12 text-center">Featured Projects</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {projects.map((project, index) => (
+                <ProjectCard key={index} project={project} />
+              ))}
+            </div>
           </div>
         </div>
-      </div>
+      </FadeInSection>
     </section>
   );
 };

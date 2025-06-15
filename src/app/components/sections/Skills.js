@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Code, Shield, CheckCircle, Zap } from 'lucide-react'; // Import icons here
 import SkillCard from '../ui/skillCard';
+import FadeInSection from '../FadeInSection';
 
 
 const skills = [
@@ -48,16 +49,18 @@ const skills = [
 const SkillsSection = () => {
     return (
         <section id="skills" className="py-20 bg-slate-900">
-            <div className="container mx-auto px-6">
-                <div className="max-w-6xl mx-auto">
-                    <h2 className="text-4xl font-bold mb-12 text-center">Skills & Technologies</h2>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {skills.map((skill, index) => (
-                            <SkillCard key={index} skill={skill} />
-                        ))}
+            <FadeInSection>
+                <div className="container mx-auto px-6">
+                    <div className="max-w-6xl mx-auto">
+                        <h2 className="text-4xl font-bold mb-12 text-center">Skills & Technologies</h2>
+                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                            {skills.map((skill, index) => (
+                                <SkillCard key={index} skill={skill} />
+                            ))}
+                        </div>
                     </div>
                 </div>
-            </div>
+            </FadeInSection>
         </section>
     );
 };

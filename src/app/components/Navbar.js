@@ -29,7 +29,7 @@ const Navigation = () => {
     };
 
     return (
-        <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-slate-900/90 backdrop-blur-lg border-b border-slate-800' : 'bg-transparent'
+        <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-gradient-to-b from-slate-900/90 to-transparent backdrop-blur-lg border-b border-slate-800' : 'bg-transparent'
             }`}>
             <div className="container mx-auto px-6 py-4">
                 <div className="flex justify-between items-center">

@@ -35,7 +35,7 @@ const Contact = () => {
     ];
 
     return (
-        <section id="contact" className="py-12 md:py-20 bg-slate-900">
+        <section id="contact" className="py-12 md:py-20 bg-slate-900 ">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="max-w-4xl mx-auto">
                     {/* Header - More compact */}

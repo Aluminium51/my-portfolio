@@ -76,8 +76,10 @@ const Contact = () => {
 
                                 {/* Email CTA Button */}
                                 <a
-                                    href="mailto:your.email@gmail.com"
+                                    href="https://mail.google.com/mail/?view=cm&fs=1&to=noptanadon.p@gmail.com"
                                     className="inline-flex items-center bg-indigo-600 hover:bg-indigo-500 px-6 md:px-8 py-2.5 md:py-3 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/25 text-sm md:text-base"
+                                    target="_blank"
+                                    rel="noopener noreferrer" // เพิ่ม rel="noopener noreferrer" เพื่อความปลอดภัย
                                 >
                                     <Mail className="w-4 h-4 md:w-5 md:h-5 mr-2" />
                                     Send me an email

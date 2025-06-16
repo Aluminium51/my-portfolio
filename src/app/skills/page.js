@@ -7,7 +7,14 @@ import {
     BookOpen, Trophy, Star, ArrowLeft, ExternalLink
 } from 'lucide-react';
 import Link from 'next/link';
-import { FaPython } from 'react-icons/fa';
+import { FaPython, FaReact, FaNodeJs, FaJava, FaGit, FaDocker, FaAws, FaGitAlt } from 'react-icons/fa';
+import {
+    SiJavascript, SiTypescript, SiNextdotjs, SiTailwindcss, SiFigma,
+    SiMysql, SiMongodb, SiFirebase, SiVercel, SiGithubpages, SiPostman, SiVisualstudiocode,
+    SiCplusplus
+} from 'react-icons/si';
+import { TbBrandCSharp } from "react-icons/tb";
+import { BiLogoVisualStudio } from "react-icons/bi";
 
 const allSkills = [
     {
@@ -15,12 +22,12 @@ const allSkills = [
         icon: <Code className="w-6 h-6" />,
         color: 'from-indigo-500 to-purple-600',
         items: [
-            { name: 'Python', level: 'Advanced', experience: '1+ years', description: 'Web Scraping, Computer Programing, OpenCV' },
-            { name: 'JavaScript', level: 'Advanced', experience: '2+ years', description: 'ES6+, DOM manipulation, Async programming' },
-            { name: 'TypeScript', level: 'Beginner', experience: 'Learning..', description: 'Comming Soon...' },
-            { name: 'Java', level: 'Intermediate', experience: '6 months', description: 'OOP, Spring Framework basics' },
-            { name: 'C++', level: 'Beginner', experience: 'Learning..', description: 'Data structures, Algorithms' },
-            { name: 'C#', level: 'Beginner', experience: 'Learning..', description: 'Game Development' }
+            { name: 'Python', level: 'Advanced', experience: '1+ years', description: 'Web Scraping, Computer Programing, OpenCV', icon: <FaPython className="w-10 h-full text-yellow-400" /> },
+            { name: 'JavaScript', level: 'Advanced', experience: '2+ years', description: 'ES6+, DOM manipulation, Async programming', icon: <SiJavascript className="w-10 h-full text-yellow-500" /> },
+            { name: 'TypeScript', level: 'Beginner', experience: 'Learning..', description: 'Comming Soon...', icon: <SiTypescript className="w-10 h-full text-blue-500" /> },
+            { name: 'Java', level: 'Intermediate', experience: '6 months', description: 'OOP, Spring Framework basics', icon: <FaJava className="w-10 h-full text-red-500" /> },
+            { name: 'C++', level: 'Beginner', experience: 'Learning..', description: 'Data structures, Algorithms', icon: <SiCplusplus className="w-10 h-full text-blue-600" /> },
+            { name: 'C#', level: 'Beginner', experience: 'Learning..', description: 'Game Development', icon: <TbBrandCSharp className="w-10 h-full text-purple-600" /> }
         ]
     },
     {
@@ -28,10 +35,10 @@ const allSkills = [
         icon: <Shield className="w-6 h-6" />,
         color: 'from-green-500 to-teal-600',
         items: [
-            { name: 'React', level: 'Intermediate', experience: '6+ months', description: 'Hooks, Context API, State management' },
-            { name: 'Next.js', level: 'Intermediate', experience: '1+ years', description: 'SSR, SSG, API routes' },
-            { name: 'Tailwind CSS', level: 'Advanced', experience: '2+ years', description: 'Utility-first CSS framework' },
-            { name: 'Figma', level: 'Beginner', experience: '1+ years', description: 'UI/UX design, Prototyping' }
+            { name: 'React', level: 'Intermediate', experience: '6+ months', description: 'Hooks, Context API, State management', icon: <FaReact className="w-10 h-full text-blue-400" /> },
+            { name: 'Next.js', level: 'Intermediate', experience: '1+ years', description: 'SSR, SSG, API routes', icon: <SiNextdotjs className="w-10 h-full text-white" /> },
+            { name: 'Tailwind CSS', level: 'Intermediate', experience: '2+ years', description: 'Utility-first CSS framework', icon: <SiTailwindcss className="w-10 h-full text-cyan-400" /> },
+            { name: 'Figma', level: 'Beginner', experience: '1+ years', description: 'UI/UX design, Prototyping', icon: <SiFigma className="w-10 h-full text-red-500" /> }
         ]
     },
     {
@@ -39,10 +46,10 @@ const allSkills = [
         icon: <Database className="w-6 h-6" />,
         color: 'from-purple-500 to-pink-600',
         items: [
-            { name: 'Node.js', level: 'Beginner', experience: '1+ years', description: 'Express.js, REST APIs' },
-            { name: 'MySQL', level: 'Beginner', experience: '1+ years', description: 'Database design, Queries' },
-            { name: 'MongoDB', level: 'Beginner', experience: '6 months', description: 'NoSQL database basics' },
-            { name: 'Firebase', level: 'Beginner', experience: '1 year', description: 'Authentication, Firestore' }
+            { name: 'Node.js', level: 'Beginner', experience: '1+ years', description: 'Express.js, REST APIs', icon: <FaNodeJs className="w-10 h-full text-green-500" /> },
+            { name: 'MySQL', level: 'Beginner', experience: '1+ years', description: 'Database design, Queries', icon: <SiMysql className="w-10 h-full text-blue-400" /> },
+            { name: 'MongoDB', level: 'Beginner', experience: '6 months', description: 'NoSQL database basics', icon: <SiMongodb className="w-10 h-full text-green-600" /> },
+            { name: 'Firebase', level: 'Beginner', experience: '1 year', description: 'Authentication, Firestore', icon: <SiFirebase className="w-10 h-full text-yellow-500" /> }
         ]
     },
     {
@@ -50,10 +57,10 @@ const allSkills = [
         icon: <Zap className="w-6 h-6" />,
         color: 'from-orange-500 to-red-600',
         items: [
-            { name: 'Git', level: 'Advanced', experience: '3+ years', description: 'Version control, Branching strategies' },
-            { name: 'VS Code', level: 'Advanced', experience: '3+ years', description: 'Extensions, Debugging, Shortcuts' },
-            { name: 'Postman', level: 'Intermediate', experience: '1+ years', description: 'API testing and documentation' },
-            { name: 'Docker', level: 'Beginner', experience: '6 months', description: 'Containerization basics' },
+            { name: 'Git', level: 'Advanced', experience: '3+ years', description: 'Version control, Branching strategies', icon: <FaGitAlt className="w-10 h-full text-red-500" /> },
+            { name: 'VS Code', level: 'Advanced', experience: '3+ years', description: 'Extensions, Debugging, Shortcuts', icon: <BiLogoVisualStudio className="w-10 h-full text-blue-400" /> },
+            { name: 'Postman', level: 'Beginner', experience: '1+ years', description: 'API testing and documentation', icon: <SiPostman className="w-10 h-full text-orange-500" /> },
+            { name: 'Docker', level: 'Beginner', experience: '6 months', description: 'Containerization basics', icon: <FaDocker className="w-10 h-full text-blue-500" /> },
         ]
     },
     {
@@ -61,9 +68,9 @@ const allSkills = [
         icon: <Globe className="w-6 h-6" />,
         color: 'from-cyan-500 to-blue-600',
         items: [
-            { name: 'Vercel', level: 'Intermediate', experience: '1+ years', description: 'Next.js deployment, Serverless' },
-            { name: 'GitHub Pages', level: 'Intermediate', experience: '2+ years', description: 'Static hosting' },
-            { name: 'AWS', level: 'Beginner', experience: '3 months', description: 'EC2, S3 basics' }
+            { name: 'Vercel', level: 'Intermediate', experience: '1+ years', description: 'Next.js deployment, Serverless', icon: <SiVercel className="w-10 h-full text-white" /> },
+            { name: 'GitHub Pages', level: 'Beginner', experience: '2+ years', description: 'Static hosting', icon: <SiGithubpages className="w-10 h-full text-purple-400" /> },
+            { name: 'AWS', level: 'Beginner', experience: '3 months', description: 'EC2, S3 basics', icon: <FaAws className="w-10 h-full text-orange-400" /> }
         ]
     }
 ];
@@ -111,7 +118,7 @@ const SkillCard = ({ skill, index }) => {
                         <div key={itemIndex} className="border border-slate-700/30 rounded-lg p-4 bg-slate-900/30 hover:bg-slate-900/50 transition-all duration-300">
                             <div className='flex flex-row space-x-5'>
                                 <div>
-                                    <FaPython className='w-10 h-full' />
+                                    {item.icon}
                                 </div>
                                 <div className='flex flex-col w-full'>
                                     <div className="flex items-center justify-between mb-2">

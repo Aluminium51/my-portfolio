@@ -42,7 +42,7 @@ const skills = [
         items: [
             { name: 'Git', level: 'Advanced' },
             { name: 'VS Code', level: 'Advanced' },
-            { name: 'Figma', level: 'Intermediate' }
+            // { name: 'Figma', level: 'Intermediate' }
         ]
     }
 ];

@@ -38,7 +38,7 @@ const allSkills = [
             { name: 'React', level: 'Intermediate', experience: '6+ months', description: 'Hooks, Context API, State management', icon: <FaReact className="w-10 h-full text-blue-400" /> },
             { name: 'Next.js', level: 'Intermediate', experience: '1+ years', description: 'SSR, SSG, API routes', icon: <SiNextdotjs className="w-10 h-full text-white" /> },
             { name: 'Tailwind CSS', level: 'Intermediate', experience: '2+ years', description: 'Utility-first CSS framework', icon: <SiTailwindcss className="w-10 h-full text-cyan-400" /> },
-            { name: 'Figma', level: 'Beginner', experience: '1+ years', description: 'UI/UX design, Prototyping', icon: <SiFigma className="w-10 h-full text-red-500" /> }
+            // { name: 'Figma', level: 'Beginner', experience: '1+ years', description: 'UI/UX design, Prototyping', icon: <SiFigma className="w-10 h-full text-red-500" /> }
         ]
     },
     {
@@ -48,7 +48,7 @@ const allSkills = [
         items: [
             { name: 'Node.js', level: 'Beginner', experience: '1+ years', description: 'Express.js, REST APIs', icon: <FaNodeJs className="w-10 h-full text-green-500" /> },
             { name: 'MySQL', level: 'Beginner', experience: '1+ years', description: 'Database design, Queries', icon: <SiMysql className="w-10 h-full text-blue-400" /> },
-            { name: 'MongoDB', level: 'Beginner', experience: '6 months', description: 'NoSQL database basics', icon: <SiMongodb className="w-10 h-full text-green-600" /> },
+            // { name: 'MongoDB', level: 'Beginner', experience: '6 months', description: 'NoSQL database basics', icon: <SiMongodb className="w-10 h-full text-green-600" /> },
             { name: 'Firebase', level: 'Beginner', experience: '1 year', description: 'Authentication, Firestore', icon: <SiFirebase className="w-10 h-full text-yellow-500" /> }
         ]
     },
@@ -60,7 +60,7 @@ const allSkills = [
             { name: 'Git', level: 'Advanced', experience: '3+ years', description: 'Version control, Branching strategies', icon: <FaGitAlt className="w-10 h-full text-red-500" /> },
             { name: 'VS Code', level: 'Advanced', experience: '3+ years', description: 'Extensions, Debugging, Shortcuts', icon: <BiLogoVisualStudio className="w-10 h-full text-blue-400" /> },
             { name: 'Postman', level: 'Beginner', experience: '1+ years', description: 'API testing and documentation', icon: <SiPostman className="w-10 h-full text-orange-500" /> },
-            { name: 'Docker', level: 'Beginner', experience: '6 months', description: 'Containerization basics', icon: <FaDocker className="w-10 h-full text-blue-500" /> },
+            // { name: 'Docker', level: 'Beginner', experience: '6 months', description: 'Containerization basics', icon: <FaDocker className="w-10 h-full text-blue-500" /> },
         ]
     },
     {
@@ -70,7 +70,7 @@ const allSkills = [
         items: [
             { name: 'Vercel', level: 'Intermediate', experience: '1+ years', description: 'Next.js deployment, Serverless', icon: <SiVercel className="w-10 h-full text-white" /> },
             { name: 'GitHub Pages', level: 'Beginner', experience: '2+ years', description: 'Static hosting', icon: <SiGithubpages className="w-10 h-full text-purple-400" /> },
-            { name: 'AWS', level: 'Beginner', experience: '3 months', description: 'EC2, S3 basics', icon: <FaAws className="w-10 h-full text-orange-400" /> }
+            // { name: 'AWS', level: 'Beginner', experience: '3 months', description: 'EC2, S3 basics', icon: <FaAws className="w-10 h-full text-orange-400" /> }
         ]
     }
 ];
